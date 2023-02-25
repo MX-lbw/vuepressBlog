@@ -1,0 +1,16 @@
+{
+  "name": "vuepress-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "docs": "vuepress dev docs --temp .temp",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-nprogress": "^1.9.8",
+    "vuepress": "^1.9.8",
+    "vuepress-plugin-reading-progress": "^1.0.10",
+    "vuepress-theme-vdoing": "^1.12.8"
+  }
+}
