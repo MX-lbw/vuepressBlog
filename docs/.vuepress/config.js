@@ -63,13 +63,14 @@ module.exports = {
     footer: {
       // 页脚信息
       createYear: 2023, // 博客创建年份
-      copyrightInfo: "RealityBoy | MIT License", // 博客版权信息，支持a标签
+      copyrightInfo: "Wu wei | MIT License", // 博客版权信息，支持a标签
     },
     htmlModules,
   },
   plugins: [
     ["@vuepress/nprogress"],
     ["reading-progress"],
+    ["vuepress-plugin-smooth-scroll"],
     [
       "@vuepress/last-updated", // "上次更新"时间格式
       {
