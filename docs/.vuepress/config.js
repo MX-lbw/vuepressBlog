@@ -1,5 +1,5 @@
 const nav = require("./config/nav");
-const htmlModules = require("./config/htmlModules.js");
+//const htmlModules = require("./config/htmlModules.js");
 module.exports = {
   base: "/",
   title: "碌碌无为-知识整理",
@@ -18,7 +18,8 @@ module.exports = {
     lineNumbers: true, // 显示代码块的行号
     extractHeaders: ["h2", "h3", "h4", "h5", "h6"], // 提取标题到侧边栏的级别，默认['h2', 'h3']
   },
-  theme: "vdoing",
+  // theme: "vdoing",npm node_modules
+  theme: require.resolve("../../theme-vdoing"), // 使用本地主题
   themeConfig: {
     nav,
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
@@ -65,7 +66,7 @@ module.exports = {
       createYear: 2023, // 博客创建年份
       copyrightInfo: "Wu wei | MIT License", // 博客版权信息，支持a标签
     },
-    htmlModules,
+    // htmlModules 广告,
   },
   plugins: [
     ["@vuepress/nprogress"],
