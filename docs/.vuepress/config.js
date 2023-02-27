@@ -18,11 +18,11 @@ module.exports = {
     lineNumbers: true, // 显示代码块的行号
     extractHeaders: ["h2", "h3", "h4", "h5", "h6"], // 提取标题到侧边栏的级别，默认['h2', 'h3']
   },
-  // theme: "vdoing",npm node_modules
+  // theme: "vdoing", npm主题依赖包
   theme: require.resolve("../../theme-vdoing"), // 使用本地主题
   themeConfig: {
     nav,
-    sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
+    // sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: "/img/leftLogo.ico", // 导航栏logo
     repo: "MX-lbw/vuepressBlog", // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数

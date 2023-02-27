@@ -9,8 +9,8 @@ module.exports = [
     link: "/pages/koa/",
     //二级目录
     items: [
-      { text: "📖Koa", link: "/pages/koa/" },
-      { text: "📖Express", link: "/pages/express/" },
+      { text: "📖Koa", link: "/pages/fa5d34/" },
+      { text: "📖Express", link: "/pages/3a1aae/" },
     ],
   },
   {
