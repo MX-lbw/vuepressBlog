@@ -6,7 +6,7 @@ module.exports = [
   },
   {
     text: "📗 Node",
-    link: "/pages/koa/",
+    link: "/pages/fa5d34/",
     //二级目录
     items: [
       { text: "📖Koa", link: "/pages/fa5d34/" },
