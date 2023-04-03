@@ -3,6 +3,18 @@ module.exports = [
   {
     text: "🚀 前端", //一级目录
     link: "/pages/73309c/",
+
+    items: [
+      {
+        text: "基础",
+        items: [
+          { text: "Html", link: "/pages/73309c/" },
+          { text: "Css", link: "/pages/73309c/" },
+          { text: "Less", link: "/pages/3a1aae/" },
+          { text: "JavaScript", link: "/pages/3a1aae/" },
+        ],
+      },
+    ],
   },
   {
     text: "📗 Node",

@@ -2,7 +2,7 @@ const nav = require("./config/nav");
 //const htmlModules = require("./config/htmlModules.js");
 module.exports = {
   base: "/",
-  title: "碌碌无为-知识整理",
+  title: "碌碌无为 🪂 知识整理",
   description: "", //后续定义
   head: [
     ["link", { rel: "icon", href: "/img/favicon.ico" }],
@@ -108,4 +108,12 @@ module.exports = {
       },
     ],
   ],
+  configureWebpack: {
+    //webpack别名 如![Image from alias](~@alias/image.png)
+    resolve: {
+      alias: {
+        "@alias": "/docs/.vuepress/public",
+      },
+    },
+  },
 };
