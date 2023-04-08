@@ -9,9 +9,9 @@ module.exports = [
         text: "基础",
         items: [
           { text: "Html", link: "/pages/73309c/" },
-          { text: "Css", link: "/pages/73309c/" },
-          { text: "Less", link: "/pages/3a1aae/" },
-          { text: "JavaScript", link: "/pages/3a1aae/" },
+          { text: "Css", link: "/pages/ed3de1/" },
+          { text: "Less", link: "/pages/738fa3/" },
+          { text: "JavaScript", link: "/pages/227687/" },
         ],
       },
     ],
