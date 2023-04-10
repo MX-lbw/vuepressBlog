@@ -16,4 +16,4 @@ yarn-error.log
 dist
 
 # vuepress
-# docs/.vuepress/dist
+docs/.vuepress/dist
