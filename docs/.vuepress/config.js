@@ -1,7 +1,7 @@
 const nav = require("./config/nav");
 //const htmlModules = require("./config/htmlModules.js");
 module.exports = {
-  base: "/",
+  base: "blog",
   title: "碌碌无为 🪂 知识整理",
   description: "", //后续定义
   head: [
