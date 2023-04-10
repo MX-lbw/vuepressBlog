@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: "/img/ww.png"
+heroImage: "img/ww.png"
 heroText: 碌碌无为
 tagline: 路漫漫其修远兮，吾将上下而求索
 actionText: 快速开始 →
