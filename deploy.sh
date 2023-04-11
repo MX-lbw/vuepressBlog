@@ -18,10 +18,11 @@ cd $dist_path
 
 git add -A
 
-git status
+
 
 git commit -m "Add dist folder"
 
-git subtree push --prefix  $dist_path origin gh-pagess
+
+git subtree push --prefix $dist_path origin gh-pages
 
 cd -
