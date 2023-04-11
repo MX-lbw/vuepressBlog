@@ -1,4 +1,9 @@
 const nav = require("./config/nav");
+const {
+  readFileList,
+  readTotalFileWords,
+  readEachFileWords,
+} = require("./webSiteInfo/readFile");
 //const htmlModules = require("./config/htmlModules.js");
 module.exports = {
   base: "/wwblog/",
@@ -41,6 +46,15 @@ module.exports = {
       showToArticle: false, // 显示到文章页底部，默认true
       // moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
     },
+    blogInfo: {
+      indexView: false, // 开启首页的访问量和排名统计，默认 true（开启）
+      pageView: false, // 开启文章页的浏览量统计，默认 true（开启）
+      readingTime: true, // 开启文章页的预计阅读时间，条件：开启 eachFileWords，默认 true（开启）。可在 eachFileWords 的 readEachFileWords 的第二个和第三个参数自定义，默认 1 分钟 300 中文、160 英文
+      eachFileWords: readEachFileWords([""], 300, 160), // 开启每个文章页的字数。readEachFileWords(['xx']) 关闭 xx 目录（可多个，可不传参数）下的文章页字数和阅读时长，后面两个参数分别是 1 分钟里能阅读的中文字数和英文字数。无默认值。readEachFileWords() 方法默认排除了 article 为 false 的文章
+      // 下面两个选项：第一次获取访问量失败后的迭代时间
+      //  pageIteration: 2500, // 如果文章页获取访问量失败，则每隔多少时间后获取一次访问量，直到获取成功或获取 10 次后。默认 3 秒。注意：设置时间太低，可能导致访问量 + 2、+ 3 ......
+      // 说明：成功获取一次访问量，访问量 + 1，所以第一次获取失败后，设置的每个隔段重新获取时间，将会影响访问量的次数。如 100 可能每次获取访问量 + 3
+    },
     author: {
       // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, href: String}
       name: "wuwei", // 必需
@@ -56,9 +70,9 @@ module.exports = {
           link: "https://github.com/MX-lbw",
         },
         {
-          iconClass: "icon-bilibili",
-          title: "bilibili",
-          link: "https://space.bilibili.com/301103230",
+          iconClass: "icon-jianshu",
+          title: "jianshu",
+          link: "https://www.jianshu.com/u/b5796d21ef29",
         },
       ],
     },
@@ -105,6 +119,16 @@ module.exports = {
       "@vuepress/search",
       {
         searchMaxSuggestions: 10,
+      },
+    ],
+    [
+      "@vuepress/pwa",
+      {
+        serviceWorker: true,
+        updatePopup: {
+          message: "尊贵的主人，检测到新内容可用，是否更新",
+          buttonText: "更新",
+        },
       },
     ],
   ],

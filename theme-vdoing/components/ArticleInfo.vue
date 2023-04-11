@@ -89,6 +89,7 @@
         >
           <a href="javascript:;">{{ articleInfo.date }}</a>
         </div>
+        <PageInfo style="margin-left: 0" />
         <div
           class="date iconfont icon-wenjian"
           title="分类"
@@ -111,7 +112,9 @@
 </template>
 
 <script>
+import PageInfo from "./PageInfo.vue";
 export default {
+  components: { PageInfo },
   data() {
     return {
       articleInfo: {},
