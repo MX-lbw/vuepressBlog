@@ -9,7 +9,7 @@ dist_path=docs/.vuepress/dist
 
 # 生成静态文件
 
-npm run build
+# npm run build
 
 # 进入生成的文件夹
 
@@ -17,6 +17,8 @@ cd $dist_path
 
 
 git add -A
+
+git status
 
 git commit -m "Add dist folder"
 
