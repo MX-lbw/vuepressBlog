@@ -20,6 +20,7 @@ module.exports = [
           { text: "Vue", link: "/pages/44307d/" },
           { text: "Pinia", link: "/pages/087eee/" },
           { text: "Vite", link: "/pages/b2b4ce/" },
+          { text: "Webpack", link: "/pages/0f8172/" },
         ],
       },
       {
@@ -42,6 +43,7 @@ module.exports = [
     items: [
       { text: "📖Koa", link: "/pages/fa5d34/" },
       { text: "📖Express", link: "/pages/3a1aae/" },
+      { text: "📖 MySQL", link: "/pages/4fff19/" },
     ],
   },
   {
