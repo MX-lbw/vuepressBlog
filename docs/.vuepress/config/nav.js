@@ -41,9 +41,10 @@ module.exports = [
     link: "/pages/fa5d34/",
     //二级目录
     items: [
-      { text: "📖Koa", link: "/pages/fa5d34/" },
-      { text: "📖Express", link: "/pages/3a1aae/" },
+      { text: "📖 Koa", link: "/pages/fa5d34/" },
+      { text: "📖 Express", link: "/pages/3a1aae/" },
       { text: "📖 MySQL", link: "/pages/4fff19/" },
+      { text: "📖 Package", link: "/pages/001c58/" },
     ],
   },
   {
